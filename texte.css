@@ -1,0 +1,272 @@
+body
+{
+margin: 0px;
+padding: 0px;
+}
+
+
+
+#principal{
+    border: 1px solid rgb(18, 21, 185);
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 620px;
+ 
+}
+#figure{
+    border: 1px solid blue;
+    margin: 5px;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+#Menu{
+    border: 0px solid black;
+    margin: 5px;
+    height: 100px;
+    
+ 
+}
+ul{
+    display: block;
+ 
+}
+li{
+    display: inline-block;
+    width: 215px;
+    color: red;  
+}
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+nav li {
+    list-style-type: none;
+}
+.Bloc{
+    display: none;
+}
+nav
+{
+    width: 100%;
+    background-color: rgb(16, 16, 175);
+}
+nav > ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a {
+    padding: 20px 30px;
+    color:white;
+}
+nav li:hover .Bloc{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+.Bloc li{
+    border-bottom: 1px, solid rgb(27, 207, 57);
+}
+.Bloc li a{
+    padding: 20px 30px;
+    font-size: 13px;
+    color: white;
+    width: 300px;
+}
+.page1:hover{
+    border-top: 5px, solid black;
+    background-color: chocolate;
+}
+.page2:hover{
+    border-top: 5px, solid black;
+    background-color: indigo;
+}
+.page3:hover{
+    border-top: 5px, solid black;
+    background-color: darkturquoise;
+}
+.page4:hover{
+    border-top: 5px, solid black;
+    background-color: blueviolet;
+
+}
+nav > ul > li:hover a{
+    padding: 15px, 15px, 20px, 30px;
+}
+.page1 .Bloc{
+    background-color: chocolate;
+}
+.page2 .Bloc{
+    background-color: indigo;
+}
+.page3 .Bloc{
+    background-color: darkturquoise;
+
+}
+.page4 .Bloc{
+    background-color: blueviolet;
+}
+.Bloc li:hover a{
+    color: black;
+    font-weight: bold;
+}
+.page1 .Bloc li:hover{
+    background-color: rgb(121, 32, 32);
+}
+.page2 .Bloc li:hover{
+    background-color: rgb(206, 25, 25);
+}
+.page3 .Bloc li:hover{
+    background-color: rgb(45, 103, 104);
+}
+.page4 .Bloc li:hover{
+    background-color: rgb(146, 120, 170);
+}
+ 
+#Milieu{
+    border: 1px solid blue;
+    margin: 5px;
+    height: 300px;
+    padding: 5px;
+    margin-top: -30px;
+}
+ 
+#Milieu1{
+    border: 1px solid blue;
+    margin: 5px;
+   height: 280px;
+   width: 400px;
+   background: gray;
+ 
+}
+ 
+ 
+#Milieu2{
+    border: 1px solid blue;
+margin-left: 420px;
+width: 490px;
+height: 270px;
+ 
+padding: 5px;
+margin-top: -290px;
+background-color: grey;
+}
+ 
+#Milieu21{
+    border: 1px solid blue;
+    margin: 5px;
+    width: 480px;
+    height: 150px;
+    background: burlywood;
+ 
+}
+#Milieu22{
+    border: 1px solid blue;
+    margin: 5px;
+    width: 480px;
+    height: 100px;
+    background: burlywood;
+ 
+}
+#piedpage{
+border: 1px solid blue;
+margin: 5px;
+height: 100px;
+background-color: gray;
+}
+#piedpage1{
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 5px;
+    height: 80px;
+    width: 247px;
+    background: burlywood;
+}
+#piedpage2{
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 263px;
+    width: 306px;
+    height: 80px;
+    margin-top: -97px;
+    background: burlywood;
+}
+#piedpage3{
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 580px;
+    width: 340px;
+    height: 80px;
+    margin-top: -97px;
+    background: burlywood;
+}
+@media all and (max-width: 1024px)
+{
+    #principal
+    {
+        width: auto;
+    }
+}
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+        display : none;
+    }
+    #menu{
+        width: 100%;
+        height: 100%;
+    }
+    #section21 {
+        width:auto; 
+    }
+    
+}
